@@ -13,22 +13,14 @@ class BCollectionViewController: UIViewController {
 	@IBOutlet weak var collectionView: UICollectionView!
 	@IBOutlet weak var progressBar: UIProgressView!
 
-
 	let mockArrayOne: [CollectionViewCellViewModel] = [
-		CollectionViewCellViewModel(titleText: "Title A", detailText: "This is a one liner.", backgroundColor: #colorLiteral(red: 0.4620226622, green: 0.8382837176, blue: 1, alpha: 1)),
-		CollectionViewCellViewModel(titleText: "Title B", detailText: "This is a two liner.\nYes it is.", backgroundColor: #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)),
-		CollectionViewCellViewModel(titleText: "Automatic Color Flipping",
-									detailText: "I can automatically change my text color depending on the background.", backgroundColor: #colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1)),
-		CollectionViewCellViewModel(titleText: "Some Long Text", detailText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat mauris non augue vestibulum pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur in lorem vitae dolor elementum ornare. Proin ultricies metus id velit malesuada, et consectetur turpis facilisis. ", backgroundColor: #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)),
-	]
-
-	let mockArrayTwo: [CollectionViewCellViewModel] = [
-		CollectionViewCellViewModel(titleText: "Title A", detailText: "This is a one liner.", backgroundColor: #colorLiteral(red: 0.4620226622, green: 0.8382837176, blue: 1, alpha: 1)),
-		CollectionViewCellViewModel(titleText: "Title B", detailText: "This is a two liner.\nYes it is.", backgroundColor: #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)),
-		CollectionViewCellViewModel(titleText: "Automatic Color Flipping", detailText: "I can automatically change text colors depending on the background.", backgroundColor: #colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1))
+		CollectionViewCellViewModel(titleText: "Title A", detailText: "This is a one liner.", background: #colorLiteral(red: 0.4620226622, green: 0.8382837176, blue: 1, alpha: 1), theme: .light),
+		CollectionViewCellViewModel(titleText: "Title B", detailText: "This is a two liner.\nYes it is.", background: #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1), theme: .light),
+		CollectionViewCellViewModel(titleText: "Title C", detailText: "Light text on dark background", background: #colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1), theme: .dark),
+		CollectionViewCellViewModel(titleText: "Fancy Image", detailText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat mauris non augue vestibulum pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur in lorem vitae dolor elementum ornare. Proin ultricies metus id velit malesuada, et consectetur turpis facilisis. ", background: #imageLiteral(resourceName: "astronomy-backlit-constellation-1421903"), theme: .dark)
 	]
 	
-	lazy var collectionViewCellViewModelArray: [CollectionViewCellViewModel] = mockArrayTwo
+	lazy var collectionViewCellViewModelArray: [CollectionViewCellViewModel] = mockArrayOne
 
 	override func viewDidLoad() {
         super.viewDidLoad()

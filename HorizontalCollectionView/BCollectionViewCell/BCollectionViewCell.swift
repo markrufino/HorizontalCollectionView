@@ -11,6 +11,7 @@ import UIKit
 class BCollectionViewCell: UICollectionViewCell {
 
 	@IBOutlet weak var canvasView: UIView!
+	@IBOutlet weak var backgroundImageView: UIImageView!
 	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var detailLabel: UILabel!
 
@@ -27,13 +28,24 @@ class BCollectionViewCell: UICollectionViewCell {
     }
 
 	public func applyViewModel(_ viewModel: CollectionViewCellViewModel) {
-		canvasView.backgroundColor = viewModel.backgroundColor
 
-		titleLabel.text = viewModel.titleText
-		titleLabel.textColor = viewModel.textColor
+		set(viewModel) {
 
-		detailLabel.text = viewModel.detailText
-		detailLabel.textColor = viewModel.textColor
+			switch $0.background.type {
+			case .plain(let bgColor):
+				canvasView.backgroundColor = bgColor
+				backgroundImageView.image = nil
+			case .image(let bgImage):
+				canvasView.backgroundColor = nil
+				backgroundImageView.image = bgImage
+			}
+
+			titleLabel.text = $0.titleText
+			detailLabel.text = $0.detailText
+			titleLabel.textColor = $0.textColor
+			detailLabel.textColor = $0.textColor
+		}
+
 	}
 
 }

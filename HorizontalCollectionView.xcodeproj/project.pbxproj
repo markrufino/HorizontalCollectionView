@@ -16,6 +16,7 @@
 		5C7698A42153413E00D59130 /* BCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7698A32153413E00D59130 /* BCollectionViewController.swift */; };
 		5C7698AA2153454600D59130 /* CollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7698A92153454600D59130 /* CollectionViewCellViewModel.swift */; };
 		5C7698AC215349F300D59130 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7698AB215349F300D59130 /* BaseViewModel.swift */; };
+		5CC5C73E2153900000C615F9 /* CollectionViewCellBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5C73D2153900000C615F9 /* CollectionViewCellBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5C7698A32153413E00D59130 /* BCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCollectionViewController.swift; sourceTree = "<group>"; };
 		5C7698A92153454600D59130 /* CollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		5C7698AB215349F300D59130 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		5CC5C73D2153900000C615F9 /* CollectionViewCellBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				5C7698AB215349F300D59130 /* BaseViewModel.swift */,
+				5CC5C73D2153900000C615F9 /* CollectionViewCellBackground.swift */,
 				5C7698A92153454600D59130 /* CollectionViewCellViewModel.swift */,
 			);
 			path = "view-models";
@@ -192,6 +195,7 @@
 				5C7698AC215349F300D59130 /* BaseViewModel.swift in Sources */,
 				5C76989E2153403C00D59130 /* BCollectionViewCell.swift in Sources */,
 				5C76988A21533FE400D59130 /* AppDelegate.swift in Sources */,
+				5CC5C73E2153900000C615F9 /* CollectionViewCellBackground.swift in Sources */,
 				5C7698A42153413E00D59130 /* BCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

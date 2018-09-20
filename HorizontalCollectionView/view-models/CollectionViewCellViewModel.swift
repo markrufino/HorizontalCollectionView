@@ -11,18 +11,30 @@ import UIKit
 
 struct CollectionViewCellViewModel: BaseViewModel {
 
+	enum Theme {
+		case light
+		case dark
+
+		var textColor: UIColor {
+			switch self {
+			case .dark:
+				return UIColor.darkText
+			case .light:
+				return UIColor.lightText
+			}
+		}
+	}
+
 	let titleText: String
 	let detailText: String
-	let backgroundColor: UIColor
+	let background: CollectionViewBackground
+	let textColor: UIColor
 
-	var textColor: UIColor {
-		var white: CGFloat = 0
-		backgroundColor.getWhite(&white, alpha: nil)
-		if white > 0.5 {
-			return UIColor.black
-		} else {
-			return UIColor.white
-		}
+	init(titleText: String, detailText: String, background: CollectionViewBackground, theme: Theme) {
+		self.titleText = titleText
+		self.detailText = detailText
+		self.background = background
+		self.textColor = theme.textColor
 	}
 
 }

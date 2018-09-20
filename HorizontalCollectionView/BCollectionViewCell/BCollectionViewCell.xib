@@ -22,6 +22,9 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDu-yn-EUs">
                         <rect key="frame" x="8" y="0.0" width="359" height="667"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="exP-Jz-MGM">
+                                <rect key="frame" x="0.0" y="0.0" width="359" height="667"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="072-MQ-T2G">
                                 <rect key="frame" x="0.0" y="601.5" width="359" height="49.5"/>
                                 <subviews>
@@ -48,9 +51,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="exP-Jz-MGM" firstAttribute="top" secondItem="fDu-yn-EUs" secondAttribute="top" id="KbI-4f-eha"/>
+                            <constraint firstAttribute="bottom" secondItem="exP-Jz-MGM" secondAttribute="bottom" id="LNb-iH-sR8"/>
+                            <constraint firstAttribute="trailing" secondItem="exP-Jz-MGM" secondAttribute="trailing" id="RfS-5E-Hfw"/>
                             <constraint firstAttribute="bottom" secondItem="072-MQ-T2G" secondAttribute="bottom" constant="16" id="Vcy-Yh-NhN"/>
                             <constraint firstItem="072-MQ-T2G" firstAttribute="leading" secondItem="fDu-yn-EUs" secondAttribute="leading" id="hD3-Jz-yVX"/>
                             <constraint firstAttribute="trailing" secondItem="072-MQ-T2G" secondAttribute="trailing" id="mmL-H7-JwE"/>
+                            <constraint firstItem="exP-Jz-MGM" firstAttribute="leading" secondItem="fDu-yn-EUs" secondAttribute="leading" id="qVR-pi-d9X"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -64,6 +71,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="280" height="392"/>
             <connections>
+                <outlet property="backgroundImageView" destination="exP-Jz-MGM" id="kFV-Wl-7mC"/>
                 <outlet property="canvasView" destination="fDu-yn-EUs" id="mKy-Gf-icv"/>
                 <outlet property="detailLabel" destination="qxa-zz-LnP" id="xDI-Iy-BSM"/>
                 <outlet property="titleLabel" destination="kGG-fN-QfK" id="2fq-n1-NPR"/>

@@ -92,10 +92,10 @@ extension BCollectionViewController: UICollectionViewDelegateFlowLayout {
 extension BCollectionViewController: UIScrollViewDelegate {
 
 	func scrollViewDidScroll(_ scrollView: UIScrollView) {
+		guard collectionViewCellViewModelArray.count != 0 else { return }
 		let headstart = 1.0 / CGFloat(collectionViewCellViewModelArray.count)
 		let progress = (scrollView.contentOffset.x / scrollView.contentSize.width) + headstart
 		progressBar.progress = Float(progress)
-		print(progress)
 	}
 
 }

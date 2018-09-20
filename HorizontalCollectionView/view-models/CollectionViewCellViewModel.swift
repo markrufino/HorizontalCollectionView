@@ -18,9 +18,9 @@ struct CollectionViewCellViewModel: BaseViewModel {
 		var textColor: UIColor {
 			switch self {
 			case .dark:
-				return UIColor.darkText
-			case .light:
 				return UIColor.lightText
+			case .light:
+				return UIColor.darkText
 			}
 		}
 	}

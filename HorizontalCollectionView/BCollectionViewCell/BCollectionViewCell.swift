@@ -10,7 +10,7 @@ import UIKit
 
 class BCollectionViewCell: UICollectionViewCell {
 
-	@IBOutlet weak var canvassView: UIView!
+	@IBOutlet weak var canvasView: UIView!
 	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var detailLabel: UILabel!
 
@@ -23,12 +23,17 @@ class BCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+		backgroundColor = UIColor.clear
     }
 
-	public func applyViewModel(_ viewModel: CollectionViewModel) {
-		canvassView.backgroundColor = viewModel.backgroundColor
+	public func applyViewModel(_ viewModel: CollectionViewCellViewModel) {
+		canvasView.backgroundColor = viewModel.backgroundColor
+
 		titleLabel.text = viewModel.titleText
+		titleLabel.textColor = viewModel.textColor
+
 		detailLabel.text = viewModel.detailText
+		detailLabel.textColor = viewModel.textColor
 	}
 
 }

@@ -20,19 +20,19 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDu-yn-EUs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="8" y="0.0" width="359" height="667"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="072-MQ-T2G">
-                                <rect key="frame" x="0.0" y="601.5" width="375" height="49.5"/>
+                                <rect key="frame" x="0.0" y="601.5" width="359" height="49.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{Title}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGG-fN-QfK">
-                                        <rect key="frame" x="8" y="0.0" width="359" height="27.5"/>
+                                        <rect key="frame" x="8" y="0.0" width="343" height="27.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{Detail}" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxa-zz-LnP">
-                                        <rect key="frame" x="8" y="27.5" width="359" height="22"/>
+                                        <rect key="frame" x="8" y="27.5" width="343" height="22"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -56,15 +56,15 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="fDu-yn-EUs" secondAttribute="trailing" id="3yW-Bi-cmX"/>
+                <constraint firstItem="fDu-yn-EUs" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" constant="-16" id="4yi-cT-gg8"/>
                 <constraint firstItem="fDu-yn-EUs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="AEh-3X-RfO"/>
-                <constraint firstItem="fDu-yn-EUs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Rmz-AX-6Hc"/>
+                <constraint firstItem="fDu-yn-EUs" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="cxw-2i-CWV"/>
                 <constraint firstAttribute="bottom" secondItem="fDu-yn-EUs" secondAttribute="bottom" id="pVJ-8h-nb3"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="280" height="392"/>
             <connections>
-                <outlet property="canvassView" destination="fDu-yn-EUs" id="mKy-Gf-icv"/>
+                <outlet property="canvasView" destination="fDu-yn-EUs" id="mKy-Gf-icv"/>
                 <outlet property="detailLabel" destination="qxa-zz-LnP" id="xDI-Iy-BSM"/>
                 <outlet property="titleLabel" destination="kGG-fN-QfK" id="2fq-n1-NPR"/>
             </connections>

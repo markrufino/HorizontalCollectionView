@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BCollectionViewCell" customModule="HorizontalCollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDu-yn-EUs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="072-MQ-T2G">
+                                <rect key="frame" x="0.0" y="601.5" width="375" height="49.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{Title}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGG-fN-QfK">
+                                        <rect key="frame" x="8" y="0.0" width="359" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{Detail}" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxa-zz-LnP">
+                                        <rect key="frame" x="8" y="27.5" width="359" height="22"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kGG-fN-QfK" firstAttribute="leading" secondItem="072-MQ-T2G" secondAttribute="leading" constant="8" id="KdI-jw-nyD"/>
+                                    <constraint firstItem="qxa-zz-LnP" firstAttribute="leading" secondItem="072-MQ-T2G" secondAttribute="leading" constant="8" id="OKR-hh-edY"/>
+                                    <constraint firstAttribute="trailing" secondItem="kGG-fN-QfK" secondAttribute="trailing" constant="8" id="PXw-g3-Uxz"/>
+                                    <constraint firstAttribute="trailing" secondItem="qxa-zz-LnP" secondAttribute="trailing" constant="8" id="UTw-Oj-n0X"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="072-MQ-T2G" secondAttribute="bottom" constant="16" id="Vcy-Yh-NhN"/>
+                            <constraint firstItem="072-MQ-T2G" firstAttribute="leading" secondItem="fDu-yn-EUs" secondAttribute="leading" id="hD3-Jz-yVX"/>
+                            <constraint firstAttribute="trailing" secondItem="072-MQ-T2G" secondAttribute="trailing" id="mmL-H7-JwE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fDu-yn-EUs" secondAttribute="trailing" id="3yW-Bi-cmX"/>
+                <constraint firstItem="fDu-yn-EUs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="AEh-3X-RfO"/>
+                <constraint firstItem="fDu-yn-EUs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Rmz-AX-6Hc"/>
+                <constraint firstAttribute="bottom" secondItem="fDu-yn-EUs" secondAttribute="bottom" id="pVJ-8h-nb3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="280" height="392"/>
+            <connections>
+                <outlet property="canvassView" destination="fDu-yn-EUs" id="mKy-Gf-icv"/>
+                <outlet property="detailLabel" destination="qxa-zz-LnP" id="xDI-Iy-BSM"/>
+                <outlet property="titleLabel" destination="kGG-fN-QfK" id="2fq-n1-NPR"/>
+            </connections>
+            <point key="canvasLocation" x="149" y="225"/>
+        </collectionViewCell>
+    </objects>
+</document>

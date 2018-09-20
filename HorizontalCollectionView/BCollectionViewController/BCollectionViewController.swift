@@ -16,7 +16,7 @@ class BCollectionViewController: UIViewController {
 	let mockArrayOne: [CollectionViewCellViewModel] = [
 		CollectionViewCellViewModel(titleText: "Title A", detailText: "This is a one liner.", background: #colorLiteral(red: 0.4620226622, green: 0.8382837176, blue: 1, alpha: 1), theme: .light),
 		CollectionViewCellViewModel(titleText: "Title B", detailText: "This is a two liner.\nYes it is.", background: #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1), theme: .light),
-		CollectionViewCellViewModel(titleText: "Title C", detailText: "Light text on dark background", background: #colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1), theme: .dark),
+		CollectionViewCellViewModel(titleText: "Title C", detailText: "Light text on dark background.", background: #colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1), theme: .dark),
 		CollectionViewCellViewModel(titleText: "Fancy Image", detailText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat mauris non augue vestibulum pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur in lorem vitae dolor elementum ornare. Proin ultricies metus id velit malesuada, et consectetur turpis facilisis. ", background: #imageLiteral(resourceName: "astronomy-backlit-constellation-1421903"), theme: .dark)
 	]
 	
